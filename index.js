@@ -6,6 +6,14 @@ const tick = () => {
     const minutes = now.getMinutes()
     const seconds = now.getSeconds()
 
+    const html = `
+    <span>${hours}:</span>
+    <span>${minutes}:</span>
+    <span>${seconds}:</span>
+    `
+    clock.innerHTML = html
+
+
 }
 
 setInterval(tick, 1000)
